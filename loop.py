@@ -1,21 +1,32 @@
-# For, While
-
-name = 'ali'
-
-# while name == 'ali':
-#     print('ok')
-#     name = input()
+import time
+import asyncio
 
 
-names = [
-    ('ali', 'rn'),
-    ('kimia', 'fadaei'),
-    ('ronak', 'hazini'),
-    ('hamed', 'taheri'),
-    ('shakila', 'ameri'),
-    ('bahar', 'iri'),
-]
+NUMBER = 100
 
-for name in names:
-    # print(name)
-    print(name[0] + ' ' + name[1])
+
+async def async_factorial(n):
+    if n == 0:
+        return 1
+    return n * await async_factorial(n - 1)
+
+
+def sync_factorial(n):
+    if n == 0:
+        return 1
+    return n * sync_factorial(n - 1)
+
+
+async_start = time.perf_counter()
+asyncio.run(async_factorial(NUMBER))
+async_time = time.perf_counter() - async_start
+
+sync_start = time.perf_counter()
+sync_factorial(NUMBER)
+sync_time = time.perf_counter() - sync_start
+
+
+print(f'{sync_time = }')
+print(f'{async_time = }')
+print(f'{(async_time > sync_time) = }')
+print(f'{(async_time - sync_time) = }')

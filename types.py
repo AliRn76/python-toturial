@@ -24,5 +24,5 @@ full_names = {
 ali_info = ('ali rn', 26)
 
 
-new_name = input()
-print(new_name)
+# new_name = input()
+# print(new_name)
