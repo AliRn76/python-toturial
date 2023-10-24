@@ -5,19 +5,27 @@ full_names = {
     'ronak': 'hazini',
     'hamed': 'taheri',
     'age': 12,
+    'children': ['a', 'b', 'c'],
     'is_child': False,
 }
 
-person = {
-    'user_1': {
-        'name': 'Ali Rn',
-        'age': 26,
-    },
-    'user_2': {
-        'name': 'Kimia Fadaei',
-        'age': 15
-    }
-}
+print(full_names['hamed'])
+for i in full_names['children']:
+    print(i)
+full_names['soroush'] = 'ghasemi'
+print(full_names)
+
+
+# person = {
+#     'user_1': {
+#         'name': 'Ali Rn',
+#         'age': 26,
+#     },
+#     'user_2': {
+#         'name': 'Kimia Fadaei',
+#         'age': 15
+#     }
+# }
 
 
 # print(full_names['ali'])
@@ -59,13 +67,13 @@ person = {
 # full_names.pop('hamed')
 # print(full_names)
 
-print(full_names)
-
-full_names.update({'kimia': 'fadaei'})
-print(full_names)
-
-full_names['amin'] = 'aminian'
-print(full_names)
-
-new_full_names = full_names | {'shakila': 'ameri'}
-print(new_full_names)
+# print(full_names)
+#
+# full_names.update({'kimia': 'fadaei'})
+# print(full_names)
+#
+# full_names['amin'] = 'aminian'
+# print(full_names)
+#
+# new_full_names = full_names | {'shakila': 'ameri'}
+# print(new_full_names)

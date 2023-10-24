@@ -6,7 +6,6 @@ len()
 dir()
 """
 
-
 names = ['ali', 'hamed', 'saba', 'ronak', 'hamed']
 
 # print(names[0])
@@ -60,8 +59,8 @@ names = ['ali', 'hamed', 'saba', 'ronak', 'hamed']
 # ['ali', 'hamed', 'saba', 'ronak', 'hamed']
 #   0        1        2       3        4
 #   -5      -4       -3      -2        -1
-print(names)
-print([names[2], names[3]])
+# print(names)
+# print([names[2], names[3]])
 # print(names[2:4])  # Slicing
 #
 # print(names[0:4])

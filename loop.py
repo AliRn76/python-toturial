@@ -1,32 +1,32 @@
-import time
-import asyncio
+# For, While
 
 
-NUMBER = 100
+# while True:
+#     x = int(input())
+#     if x == 7:
+#         print('You won')
+#         break
+#
+#     else:
+#         print('try again')
+# print('Game is finished')
+
+# x = int(input())
+# while x != 7:
+#     print('try again')
+#     x = int(input())
+#
+# print('You won')
 
 
-async def async_factorial(n):
-    if n == 0:
-        return 1
-    return n * await async_factorial(n - 1)
+names = {
+    ('ali', 'rn'),
+    ('kimia', 'fadaei'),
+    ('ronak', 'hazini'),
+    ('hamed', 'taheri'),
+    ('shakila', 'ameri'),
+    ('bahar', 'iri'),
+}
 
-
-def sync_factorial(n):
-    if n == 0:
-        return 1
-    return n * sync_factorial(n - 1)
-
-
-async_start = time.perf_counter()
-asyncio.run(async_factorial(NUMBER))
-async_time = time.perf_counter() - async_start
-
-sync_start = time.perf_counter()
-sync_factorial(NUMBER)
-sync_time = time.perf_counter() - sync_start
-
-
-print(f'{sync_time = }')
-print(f'{async_time = }')
-print(f'{(async_time > sync_time) = }')
-print(f'{(async_time - sync_time) = }')
+for name in names:
+    print(name[0] + ' ' + name[1])
