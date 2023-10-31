@@ -14,3 +14,5 @@ print(len_ali)
 
 
 print(len(['ali', 'soroush']))
+
+dir()

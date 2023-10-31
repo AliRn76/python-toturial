@@ -1,6 +1,6 @@
 name = 'ali'
 
-# ==, !=
+# ==, !=, <, >, ...
 
 if name != 'ali':
     print('ok')

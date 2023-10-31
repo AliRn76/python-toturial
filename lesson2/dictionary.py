@@ -9,11 +9,13 @@ full_names = {
     'is_child': False,
 }
 
-print(full_names['hamed'])
-for i in full_names['children']:
-    print(i)
-full_names['soroush'] = 'ghasemi'
-print(full_names)
+# print(full_names['hamed'])
+#
+# for i in full_names['children']:
+#     print(i)
+
+# full_names['soroush'] = 'ghasemi'
+# print(full_names)
 
 
 # person = {
