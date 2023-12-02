@@ -8,7 +8,7 @@ age = 26.5
 is_male = True
 
 # List
-names = ['ali', 'saba', 'ronak', 'hamed', 'ali']
+names = ['ali', 'saba', 'ronak', 'hamed', 'ali', 1, True]
 
 # Set
 last_names = {'rn', 'taheri', 'fadaei', 'rn'}
@@ -21,7 +21,7 @@ full_names = {
 }
 
 # Tuple
-ali_info = ('ali rn', 26)
+ali_info = ('ali rn', 26, True, 'ok')
 
 
 # new_name = input()

@@ -16,7 +16,7 @@
 # while x != 7:
 #     print('try again')
 #     x = int(input())
-#
+
 # print('You won')
 #
 #
@@ -28,7 +28,16 @@ names = [
     ('shakila', 'ameri'),
     ('bahar', 'iri'),
 ]
+# Iterable
+# for name in names:
+#     print(name[0] + ' ' + name[1])
 
-for name in names:
-    # print(name)
-    print(name[0] + ' ' + name[1])
+for i, name in enumerate(names):
+    if i == 2:
+        continue
+    print(i, name)
+else:
+    print('Done')
+
+# for i in range(10):
+#     print(names[i])
